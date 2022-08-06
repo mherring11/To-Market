@@ -34,10 +34,38 @@
 }
 
 
-
 .name {
     float: left;
     color: #2b4162;
     font-size: 28px;
     padding: 14px 14px;
+}
+
+/* search styling.. */
+
+.search {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.search-bar input {
+    background: #2b4162;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
 }
