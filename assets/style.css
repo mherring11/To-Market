@@ -1,0 +1,43 @@
+.topnav {
+    background-color: grey;
+    overflow: hidden;
+}
+
+.div {
+    resize: vertical;
+    overflow: a;
+}
+
+.dash,
+.login {
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 21px;
+    transition-duration: 0.4s;
+    position: relative;
+    padding: 0px 20px 2px 25px;
+    float: right;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.dash:hover {
+    background-color: #2b4162;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.login:hover {
+    background-color: #2b4162;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+
+
+.name {
+    float: left;
+    color: #2b4162;
+    font-size: 28px;
+    padding: 14px 14px;
+}
