@@ -1,31 +1,28 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const fileUpload = require('express-fileupload');
 
 class Product extends Model
 {
 
 }
 
-// define table columns and configuration
 Product.init(
     {
-      // define an id column
-      id : {
-          // use the special Sequelize DatTypes object provide what ype of data it is
+      id: {
           type: DataTypes.INTEGER,
-          // this is the equivalent of SQL's NOT NULL option
           allowNull: false,
-          //instruct that this is the Primary Key
           primaryKey: true,
-          // turn on auto increment
           autoIncrement: true
       },
-      // define a username column
+      image: {
+          type: DataTypes.STRING,
+          allowNull: false
+      },
       product_name : {
           type: DataTypes.STRING,
-          allowNull: false,
+          allowNull: false
       },
-      // Define a password column
       category: {
           type: DataTypes.STRING,
           allowNull: false,
@@ -38,6 +35,10 @@ Product.init(
             validate: {
                 len: [1]
             }
+      },
+      price: {
+        type: DataTypes.DECIMAL(10, 2),
+        allowNull: false
       },
       user_id: {
         type: DataTypes.INTEGER,
