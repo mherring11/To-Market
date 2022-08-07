@@ -2,9 +2,18 @@ const router = require('express').Router();
 const sequelize = require('../config/connection.js');
 
 router.get('/', (req, res) => {
+    Product.findAll().then(dbInventoryData => {
+    const items = dbInventoryData.map(item => item.get({ plain: true }));
+
     res.render('homepage', {
+        items,
         title: 'To-Market',
         loggedIn: req.session.loggedIn
+    });
+    })
+    .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
     });
 });
 
@@ -26,17 +35,6 @@ router.get('/signup', (req, res) => {
     res.render('signup', {
         title: 'To-Market'
     });
-});
-
-router.get('/dashboard', (req, res) => {
-    if (req.session.loggedIn) {
-        res.render('dashboard', {
-            title: 'Your Dashboard',
-            loggedIn: req.session.loggedIn
-        });
-        return;
-    }
-    res.redirect('/login');
 });
 
 module.exports = router;
