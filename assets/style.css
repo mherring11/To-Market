@@ -1,134 +1,276 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 
 
 .topnav {
-    background-color:#e0a890;
-    width: 100%;
-    height: 5rem;
-    
+  background-color:#e0a890;
+  width: 100%;
+  height: 5rem;
+  
 }
 
 .div {
-    resize: vertical;
-    overflow: a;
+  resize: vertical;
+  overflow: a;
 }
 
 
 .dash,
 .login {
-    border: 1px solid black;
-    cursor: pointer;
-    font-size: 21px;
-    transition-duration: 0.4s;
-    position: relative;
-    padding: 0px 20px 2px 25px;
-    float: right;
-    justify-content: space-between;
-    border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  position: relative;
+  padding: 0px 20px 2px 25px;
+  float: right;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .dash:hover {
-    background-color: #2b4162;
-    color: white;
-    transition-duration: 0.4s;
+  background-color: #2b4162;
+  color: white;
+  transition-duration: 0.4s;
 }
 
 .login:hover {
-    background-color: #2b4162;
-    color: white;
-    transition-duration: 0.4s;
+  background-color: #2b4162;
+  color: white;
+  transition-duration: 0.4s;
 }
 
 
 .name {
-    float: left;
-    color:#2b4162;
-    font-size: 28px;
-    padding: 14px 14px;
+  float: left;
+  color:#2b4162;
+  font-size: 28px;
+  padding: 14px 14px;
 }
 
-/* search styling.. */
+/********** search styling.. **********/
 
 .search {
-    width: 100%;
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-bar {
-    width: 100%;
-    max-width: 650px;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 20px;
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
 }
 
 .search-bar input {
-    background: #2b4162;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: white;
+  background: #2b4162;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: white;
 }
 
-/***********Landing section */
+/************End of Search bar **************/
+
+/**********Cards Section **************/
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: #ccc;
+  box-shadow: 5px 5px 15px 5px #e0a890;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #2b4162, #0b6e4f);
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #2b4162, #0b6e4f);
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+/***********Landing section************/
 
 .home{
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    gap:1.5rem;
-    background: #e0a890;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap:1.5rem;
+  background: #e0a890;
 }
 
 .home .content{
-    flex:1 1 40rem;
+  flex:1 1 40rem;
 }
 
 .home .image{
-    flex:1 1 40rem;
-    text-align: center;
+  flex:1 1 40rem;
+  text-align: center;
 }
 
 .home .image img{
-    width:50vw;
+  width:40vw;
 }
 .home .content span {
-    color:#2b4162;
-    font-size: 3rem;
+  color:#2b4162;
+  font-size: 3rem;
 }
 
 .home .content h3{
-    color: #2b4162;
-    font-size: 5rem;
-    text-transform: uppercase;
+  color: #2b4162;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 .btn{
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: 5rem;
-    background:#0b6e4f;
-    color:white;
-    font-size: 1.8rem;
-    padding:.9rem 3.5rem;
-    cursor: pointer;
-}`
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background:#0b6e4f;
+  color:white;
+  font-size: 1.8rem;
+  padding:.9rem 3.5rem;
+  cursor: pointer;
+}
 
 .btn:hover {
-    color: white;
+  color: white;
+}
+
+.category .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.category .box-container .box{
+  height: 30rem;
+  flex:1 1 40rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow:hidden;
+}
+
+.category .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.category .box-container .content{
+  position: absolute;
+  bottom: 7rem; left:2rem;
+}
+
+.category .box-container .content span{
+  font-size: 2rem;
+  color:var(--orange);
+}
+
+.category .box-container .content h3{
+  font-size: 3rem;
+  color:#3337;
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+/**********About **********/
+
+.section-gig {
+	padding: 60px 0;
+	background: #e0a890 url(./images/bg-01.png) no-repeat left bottom;
+	border-radius: 0 100px 0 0;
+  margin-top: 30px;
+}
+
+.gig-item {
+	padding: 25px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.gig-item h2 {
+	font-size: 27px;
+	color: #FFFFFF;
+	margin-bottom: 22px;
+}
+
+.gig-item p {
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+/**********Media Query **********/
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
 }
