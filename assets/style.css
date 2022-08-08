@@ -231,6 +231,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 60px;
+  text-align: center;
 }
 .product-section h1,
 .product-section p {
