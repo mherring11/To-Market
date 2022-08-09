@@ -152,7 +152,7 @@ body {
 /* hero section styles */
 
 #hero {
-  background-image: url(images/open\ shop.jpg);
+  background-image: url('../assets/images/open\ shop.jpg');
   width: 100%;
   height: 100vh;
   background-size:contain;
@@ -299,7 +299,7 @@ body {
 /* off banner section styles */
 
 #off-banner {
-  background-image: url(./images/banner/sunglasses.png);
+  background-image: url('../assets/images/sunglasses.png');
   background-size: cover;
   width: 100%;
   height: 40vh;
@@ -357,10 +357,10 @@ span {
   border: 1px solid #041e42;
 }
 #banners .big-banners-1 {
-  background-image: url(images/products/buy1\ get1.jpg);
+  background-image: url('../assets/images/products/buy1\ get1.jpg');
 }
 #banners .big-banners-2 {
-  background-image: url(images/products/fall\ winter.jpg);
+  background-image: url('../assets/images/products/fall\ winter.jpg');
 }
 
 /* newsletter section styles */
@@ -422,8 +422,7 @@ span {
   padding: 75px;
   background-color: #ececec;
 }
-#footer div{
-}
+
 #footer p, #footer a{
   color: rgb(109, 109, 109);
   text-decoration: none;

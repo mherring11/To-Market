@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection.js");
-const { Product} = require("../models");
+const {Product} = require("../models");
 
 router.get("/", (req, res) => {
   Product.findAll()
