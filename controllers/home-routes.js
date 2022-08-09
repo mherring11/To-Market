@@ -7,7 +7,6 @@ router.get('/', (req, res) => {
 
     res.render('homepage', {
         items,
-        title: 'To-Market',
         loggedIn: req.session.loggedIn
     });
     })
