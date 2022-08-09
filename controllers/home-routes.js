@@ -18,6 +18,10 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/about", (req, res) => {
+  res.render("about");
+});
+
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/dashboard");
@@ -25,6 +29,7 @@ router.get("/login", (req, res) => {
   }
   res.render("login");
 });
+
 
 router.get("/signup", (req, res) => {
   if (req.session.loggedIn) {

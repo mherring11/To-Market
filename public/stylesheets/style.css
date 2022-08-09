@@ -394,7 +394,6 @@ span {
 /* newsletter section styles */
 
 #newsletter {
-  background-image: url(images/banner/b14.png);
   background-repeat: no-repeat;
   background-position: 180px;
   background-color: #041e42;
@@ -471,3 +470,7 @@ span {
   border-radius: 7px;
 }
 
+/* --------- DASHBOARD STYLING ------------ */
+#dash-inventory{
+  margin: 10%;
+}

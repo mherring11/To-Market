@@ -1,1 +1,13 @@
-<h1>Welcome to your dashboard!</h1>
+<div id="dash-inventory" class="row">
+    {{#if loggedIn}}
+        <div class="col-md-8">
+            <h1>Your Inventory: </h1>
+        </div>
+        <form id="addProduct-form" class="col-md-4">
+            <h3>Add a Product</h3>
+            <button type="submit">Add</button>
+        </form>
+    {{else}}
+        <h1>You are not logged in yet.</h1>
+    {{/if}}
+</div>
