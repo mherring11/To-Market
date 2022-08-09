@@ -13,7 +13,6 @@ router.get('/', (req, res) =>
         
             res.render('dashboard', {
             items,
-            title: 'Your Dashboard',
             loggedIn: req.session.loggedIn
             });
             return;

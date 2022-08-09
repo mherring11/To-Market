@@ -28,7 +28,11 @@
               <li><a class="active" href="/">Home</a></li>
               <li><a href="/about">About</a></li>
               <li><a href="/dashboard">Dashboard</a></li>
-              <li><a href="/login">Login</a></li>
+              {{#if loggedIn}}
+                <li><a href="/api/users/logout">Logout</a></li>
+              {{else}}
+                <li><a href="/login">Login</a></li>
+              {{/if}}
             </ul>
           </nav>
           <div class="header-list-icon">
@@ -39,8 +43,8 @@
     </header>
 
     {{{body}}}
+    
     <!--footer section-->
-
     <footer>
       <div id="footer">
         <div class="contact">

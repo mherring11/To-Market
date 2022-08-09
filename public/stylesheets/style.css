@@ -327,6 +327,7 @@ body {
 
 #off-banner {
   background-image: url('../assets/images/sunglasses.png');
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 40vh;

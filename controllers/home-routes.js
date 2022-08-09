@@ -23,9 +23,7 @@ router.get("/login", (req, res) => {
     res.redirect("/dashboard");
     return;
   }
-  res.render("login", {
-    title: "To-Market",
-  });
+  res.render("login");
 });
 
 router.get("/signup", (req, res) => {
@@ -33,9 +31,7 @@ router.get("/signup", (req, res) => {
     res.redirect("/dashboard");
     return;
   }
-  res.render("signup", {
-    title: "To-Market",
-  });
+  res.render("signup");
 });
 
 module.exports = router;
