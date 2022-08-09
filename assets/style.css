@@ -120,6 +120,45 @@ body {
   left: 20px;
 }
 
+/***********About Page **********/
+
+.about-content {
+	padding: 60px;
+}
+
+.about-us {
+  font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content h1 {
+	font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.about-content h2 {
+	font-weight: 600;
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+
+.about-content p {
+	font-size: 20px;
+}
+
+.about-img {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.abt {
+	display: flex;
+	align-items: center;
+}
+/*********End of about **********/
 
 /* hero section styles */
 
