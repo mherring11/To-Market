@@ -278,7 +278,7 @@ body {
 .product-section p {
   text-align: center;
 }
-.product-section .product-cart {
+.product-cart {
   width: 280px;
   border: 1px solid #ebebeb;
   padding: 13px;
@@ -288,32 +288,32 @@ body {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   transition: box-shadow 0.2s;
 }
-.product-section .product-cart:hover {
+.product-cart:hover {
   box-shadow: 20px 20px 30px #e0a890
 }
-.product-section .product-cart img {
+.product-cart img {
   width: 100%;
   border-radius: 25px;
 }
-.product-section .product-cart span {
+.product-cart span {
   color: #2b4162;
   font-weight: 700;
   line-height: 60px;
   text-shadow: #e0a890;
 }
-.product-section .product-cart h4 {
+.product-cart h4 {
   font-size: 18px;
   color: rgb(41, 41, 41);
 }
-.product-section .product-cart .stars {
+.product-cart .stars {
   color: #e6ae2c;
   padding: 6px 0;
 }
-.product-section .product-cart .price {
+.product-cart .price {
   color: #088178;
   padding: 4px 0;
 }
-.product-section .product-cart .buy-icon {
+.product-cart .buy-icon {
   color: #088178;
   background-color: #c7e9e75e;
   padding: 15px;
@@ -471,6 +471,7 @@ span {
 }
 
 /* --------- DASHBOARD STYLING ------------ */
-#dash-inventory{
+#dash-inventory, .contact-page, .add-space{
   margin: 10%;
 }
+
