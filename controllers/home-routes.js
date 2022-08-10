@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection.js");
-const { Product, User } = require("../models");
+const {Product} = require("../models");
 
 router.get("/", (req, res) => {
   Product.findAll()
@@ -9,8 +9,7 @@ router.get("/", (req, res) => {
 
       res.render("homepage", {
         items,
-        title: "To-Market",
-        loggedIn: req.session.loggedIn,
+        loggedIn: req.session.loggedIn
       });
     })
     .catch((err) => {
@@ -19,24 +18,25 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/about", (req, res) => {
+  res.render("about");
+});
+
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/dashboard");
     return;
   }
-  res.render("login", {
-    title: "To-Market",
-  });
+  res.render("login");
 });
+
 
 router.get("/signup", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/dashboard");
     return;
   }
-  res.render("signup", {
-    title: "To-Market",
-  });
+  res.render("signup");
 });
 
 module.exports = router;

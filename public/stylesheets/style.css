@@ -120,39 +120,50 @@ body {
   left: 20px;
 }
 
-/* search styling.. */
+/***********About Page **********/
 
-.search {
-  width: 100%;
-  display: flex;
-  
+.about-content {
+	padding: 60px;
 }
 
-.search-bar {
-  width: 100%;
-  max-width: 650px;
-  display: flex;
-  align-items: center;
-  border-radius: 60px;
-  padding: 10px 20px;
+.about-us {
+  font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 20px;
+  text-align: center;
 }
 
-.search-bar input {
-  background: #2b4162;
-  flex: 1;
-  border: 0;
-  outline: none;
-  padding: 24px 20px;
-  font-size: 20px;
-  color: white;
+.about-content h1 {
+	font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 20px;
 }
 
-/* home main styles */
+.about-content h2 {
+	font-weight: 600;
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+
+.about-content p {
+	font-size: 20px;
+}
+
+.about-img {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.abt {
+	display: flex;
+	align-items: center;
+}
+/*********End of about **********/
 
 /* hero section styles */
 
 #hero {
-  background-image: url(images/open\ shop.jpg);
+  background-image: url('../assets/images/open\ shop.jpg');
   width: 100%;
   height: 100vh;
   background-size:contain;
@@ -176,18 +187,31 @@ body {
   text-shadow: 1px 1px 1px whitesmoke;
 
 }
-#hero button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 260px;
-  height: 60px;
-  border: 0;
+
+#hero .search input {
+  padding: 20px;
+  width: 350px;
+  height: 56px;
+  background-color: #d1d0d0;
+  border-radius: 6px 0 0 6px;
+  font-size: 18px;
+
+  border: none;
+  outline: none;
+  margin-right: -4px;
+  margin-top: 12px;
+}
+
+#hero .search button {
+  margin-left: 0;
+  padding: 20px;
+  border: none;
+  width: 120px;
+  background-color: #088178;
+  color: white;
+  font-size: 17px;
+  border-radius: 0 6px 6px 0;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 700;
-  color: #088178;
-  padding: 14px 65px 14px 65px;
 }
 
 /* feature section styles */
@@ -246,6 +270,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 60px;
+  margin-top: 50px;
+  text-align: center;
+
 }
 .product-section h1,
 .product-section p {
@@ -271,7 +298,7 @@ body {
 .product-section .product-cart span {
   color: #2b4162;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 60px;
   text-shadow: #e0a890;
 }
 .product-section .product-cart h4 {
@@ -299,7 +326,8 @@ body {
 /* off banner section styles */
 
 #off-banner {
-  background-image: url(./images/banner/sunglasses.png);
+  background-image: url('../assets/images/sunglasses.png');
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 40vh;
@@ -357,16 +385,15 @@ span {
   border: 1px solid #041e42;
 }
 #banners .big-banners-1 {
-  background-image: url(images/products/buy1\ get1.jpg);
+  background-image: url('../assets/images/products/buy1\ get1.jpg');
 }
 #banners .big-banners-2 {
-  background-image: url(images/products/fall\ winter.jpg);
+  background-image: url('../assets/images/products/fall\ winter.jpg');
 }
 
 /* newsletter section styles */
 
 #newsletter {
-  background-image: url(images/banner/b14.png);
   background-repeat: no-repeat;
   background-position: 180px;
   background-color: #041e42;
@@ -422,8 +449,7 @@ span {
   padding: 75px;
   background-color: #ececec;
 }
-#footer div{
-}
+
 #footer p, #footer a{
   color: rgb(109, 109, 109);
   text-decoration: none;
@@ -444,3 +470,7 @@ span {
   border-radius: 7px;
 }
 
+/* --------- DASHBOARD STYLING ------------ */
+#dash-inventory{
+  margin: 10%;
+}

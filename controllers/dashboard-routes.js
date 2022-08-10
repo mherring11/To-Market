@@ -13,7 +13,6 @@ router.get('/', (req, res) =>
         
             res.render('dashboard', {
             items,
-            title: 'Your Dashboard',
             loggedIn: req.session.loggedIn
             });
             return;
@@ -23,7 +22,8 @@ router.get('/', (req, res) =>
             res.status(500).json(err);
         });
     }
-    res.redirect('/login');
+    else
+      res.redirect('/login');
 });
 
 router.get('/inventory/:id', (req, res) =>

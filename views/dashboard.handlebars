@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-
-<body>
-    <h1>Welcome to your dashboard!</h1>
-
-{{!-- add button to add items --}}
-
-</body>
-
-</html>
+<div id="dash-inventory" class="row">
+    {{#if loggedIn}}
+        <div class="col-md-8">
+            <h1>Your Inventory: </h1>
+        </div>
+        <form id="addProduct-form" class="col-md-4">
+            <h3>Add a Product</h3>
+            <button type="submit">Add</button>
+        </form>
+    {{else}}
+        <h1>You are not logged in yet.</h1>
+    {{/if}}
+</div>
