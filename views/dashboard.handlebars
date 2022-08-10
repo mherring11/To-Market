@@ -2,12 +2,63 @@
     {{#if loggedIn}}
         <div class="col-md-8">
             <h1>Your Inventory: </h1>
+            <div class="row">
+                <div class="col-md-4">
+                    Card 1
+                </div>
+                <div class="col-md-4">
+                    Card 2
+                </div>
+                <div class="col-md-4">
+                    Card 3
+                </div>
+                <div class="col-md-4">
+                    Card 4
+                </div>
+                <div class="col-md-4">
+                    Card 5
+                </div>
+                <div class="col-md-4">
+                    Card 6
+                </div>
+            </div>
         </div>
         <form id="addProduct-form" class="col-md-4">
             <h3>Add a Product</h3>
-            <button type="submit">Add</button>
+
+            <div class="mb-3">
+                <label for="product_name" class="form-label">Product Name:</label>
+                <input type="form-control" class="form-control" id="product_name" placeholder="Enter product name...">
+            </div>
+            <div class="mb-3">
+                <select class="form-select form-select-md" aria-label="category select" id="category">
+                    <option selected>Select a Category...</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Sports & Outdoors">Sports & Outdoors</option>
+                    <option value="Toys & Games">Toys & Games</option>
+                    <option value="Home & Garden">Home & Garden</option>
+                    <option value="Health & Beauty">Health & Beauty</option>
+                    <option value="Baby & Kids">Baby & Kids</option>
+                    <option value="Clothes & Shoes">Clothes & Shoes</option>
+                    <option value="Vehicles">Vehicles</option>
+                </select>
+
+                <input class="form-control" type="text" placeholder="Enter product price..." aria-label="Product price" id="price">         
+            </div>
+            
+            <div class="mb-3">
+                <label for="description" class="form-label">Product Description:</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="productImage" class="form-label">Choose an Image...</label>
+                <input class="form-control" type="file" name="productImage">
+            </div>
+            <button type="submit" class="btn btn-primary" id="add-product-btn">Add</button>
         </form>
     {{else}}
         <h1>You are not logged in yet.</h1>
     {{/if}}
 </div>
+<script src="/js/dashboard.js"></script>

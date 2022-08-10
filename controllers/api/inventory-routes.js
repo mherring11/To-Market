@@ -61,33 +61,37 @@ router.get('/:id', (req, res) =>
 // Add a single item to inventory
 router.post('/', async (req, res) =>
 {
-    let imageFile;
+    let productImage;
     let uploadPath;
+    console.log(req.files);
+    console.log("Made it to post!");
 
     if (!req.files || Object.keys(req.files).length === 0) {
         return res.status(400).send('No file was uploaded.');
     }
 
-    imageFile = req.files.imageFile;
-    uploadPath = __dirname + '/assets/images/products/' + imageFile.name;
-    storedPath = '/assets/images/products/' + imageFile.name;
+    productImage = req.files.productImage;
+    console.log(productImage);
+    // uploadPath = __dirname + '/assets/images/products/' + productImage.name;
+    // storedPath = '/assets/images/products/' + productImage.name;
 
-    await imageFile.mv(uploadPath, function(err) {
-        if (err)
-          return res.status(500).send(err);
-    });
+    // await productImage.mv(uploadPath, function(err) {
+    //     if (err)
+    //       return res.status(500).send(err);
+    // });
 
-    await Product.create({
-        product_name: req.params.product_name,
-        image: storedPath,
-        category: req.params.category,
-        description: req.params.description,
-        user_id: req.session.user_id
-    }).then(dbItemData => res.json(dbItemData))
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
+    // await Product.create({
+    //     image: storedPath,
+    //     product_name: req.params.product_name,
+    //     category: req.params.category,
+    //     description: req.params.description,
+    //     price: req.params.price,
+    //     user_id: req.session.user_id
+    // }).then(dbItemData => res.json(dbItemData))
+    // .catch(err => {
+    //     console.log(err);
+    //     res.status(500).json(err);
+    // });
 });
 
 // Delate a signle item from user's inventory
