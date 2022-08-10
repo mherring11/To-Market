@@ -59,7 +59,7 @@ body {
   width: 100%;
 }
 
-/* header styles */
+/***************header styles***************/
 
 #header {
   display: flex;
@@ -151,7 +151,7 @@ body {
 
 .about-img {
 	padding: 20px;
-	margin: 0 auto;
+	margin: 10px
 }
 
 .abt {
